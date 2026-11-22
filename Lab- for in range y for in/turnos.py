@@ -1,4 +1,4 @@
-# Paso 1: datos de la jornada
+# Datos de la jornada
 while True:
     apertura = int(input("Hora de apertura (0 a 23): "))
     if 0 <= apertura <= 23:
@@ -17,7 +17,7 @@ while True:
         break
     print("La duración debe ser mayor que 0.")
 
-# Paso 2: trabajar en minutos desde la medianoche
+# Trabajar en minutos desde la medianoche
 inicio = apertura * 60
 ultimo_inicio = cierre * 60 - duracion
 
@@ -25,7 +25,7 @@ total_turnos = 0
 for minuto in range(inicio, ultimo_inicio + 1, duracion):
     total_turnos += 1
 
-    # Paso 3: formato del reloj
+    # Formato del reloj
     hora_ini = minuto // 60
     min_ini = minuto % 60
     fin = minuto + duracion
