@@ -1,10 +1,8 @@
-# ==============================================================================
 # Curso: Principios de Programación 1 (SOFT-01)
 # Autor: Valeria Acuña Castillo
 # Fecha: 22 de noviembre, 2026
 # Versión: 1.0
 # Descripción: Simulación del control de temperatura de una cámara experimental.
-# ==============================================================================
 
 # Entrada de datos
 temperatura_inicial = float(input("Ingrese la temperatura inicial (°C): "))
@@ -21,7 +19,7 @@ else:
     temperatura_actual = temperatura_inicial
     ciclos = 0
 
-    print("\n Inicio de la simulación de calentamiento")
+    print("\n== Inicio de la simulación de calentamiento ==")
 
     # Ciclo
     while temperatura_actual < temperatura_objetivo:
@@ -30,6 +28,6 @@ else:
         print("Ciclo", ciclos, "-> Temperatura:", temperatura_actual, "°C")
 
     # Salida
-    print("\n Resultados de la simulación")
+    print("\n== Resultados de la simulación ===")
     print("Temperatura final alcanzada:", temperatura_actual, "°C")
     print("Total de ciclos ejecutados:", ciclos)

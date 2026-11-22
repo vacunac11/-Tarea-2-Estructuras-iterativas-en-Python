@@ -1,12 +1,8 @@
-# ==============================================================================
-# Nombre del archivo: ejercicio3_estacionamiento.py
 # Curso: Principios de Programación 1 (SOFT-01)
-# Autor: [Tu Nombre Completo]
+# Autor: Valeria Acuña Castillo
 # Fecha: 22 de noviembre, 2026
-# Versión: 1.4
+# Versión: 1.0
 # Descripción: Sistema de administración de estacionamiento privado con menú
-#              repetitivo mediante while True y condicionales múltiples.
-# ==============================================================================
 
 # Constantes del programa
 CAPACIDAD_MAXIMA = 20
@@ -44,7 +40,7 @@ while True:
         if vehiculos_presentes > 0:
             horas_cobrar = int(input("Ingrese la cantidad de horas a cobrar: "))
             
-            # Validación con ciclo while para horas estrictamente mayores a 0
+            # Validación para horas estrictamente mayores a 0
             while horas_cobrar <= 0:
                 print("[ERROR] Las horas cobradas deben ser estrictamente mayores a 0.")
                 horas_cobrar = int(input("Ingrese una cantidad de horas válida: "))
