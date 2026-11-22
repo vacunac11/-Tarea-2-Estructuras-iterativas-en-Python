@@ -1,3 +1,4 @@
+# Archivo: ejercicio_uno.py
 # Curso: Principios de Programación 1 (SOFT-01)
 # Autor: Valeria Acuña Castillo
 # Fecha: 22 de noviembre, 2026
